@@ -5,8 +5,14 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
+header('Access-Control-Allow-Origin: *');
+//header( 'Access-Control-Allow-Headers: Authorization, Content-Type' );
+header('Access-Control-Allow-Headers:  Content-Type, X-Auth-Token, Origin, Authorization');
+header('Access-Control-Allow-Methods: GET, PUT, POST, OPTIONS, DELETE');
 
 define('LARAVEL_START', microtime(true));
+
+
 
 /*
 |--------------------------------------------------------------------------
